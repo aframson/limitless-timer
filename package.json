@@ -1,0 +1,18 @@
+{
+  "name": "limitless-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "keywords": [
+    "timer"
+  ],
+  "author": "Richard Obiri",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.3"
+  }
+}
