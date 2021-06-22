@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+}
+:root{
+    --background: rgb(255, 247, 247);
+    --background-linear1: rgb(250, 204, 204);
+    --background-linear2: rgb(248, 105, 100);
+    --container: #353535;
+    --text-color: white;
+    --screen: #353535;
+    --btn-hover: black;
+    --btn-hover-text: #ff7e6d;
+    --shadow: rgba(59, 59, 59, 0.75);
+}
+#time{
+    font-weight: 300;
+    font-size: 270px;
+}
+.c-body{
+    background: var(--background);
+    background: linear-gradient(135deg, var(--background-linear1) 0%, var(--background-linear2) 70%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-time{
+    background-color: var(--container);
+    width:fit-content;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 11px 17px 22px 0px var(--shadow);
+    padding: 20px;
+}
+.c-time>.screen{
+    color: var(--text-color);
+    background-color: var(--screen);
+    margin: 6px;
+    text-align: center;
+}
+.say{
+    position: absolute;
+}
+.c-btn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;    
+    margin: 15px 100px;
+}
+
+.c-btn>button{    
+    display: block;
+    background: none;
+    border: none;
+    outline: inherit;
+    cursor: pointer;
+
+    height: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: var(--text-color);
+}
+button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: var(--btn-hover-text);
+}
